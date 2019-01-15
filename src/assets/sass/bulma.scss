@@ -1,0 +1,31 @@
+@charset "utf-8";
+$white: #fefefe;
+$light: #efefef;
+$dark: #343434;
+$primary: #3498db;
+
+$section-padding: 0rem;
+
+// =================================================
+// Menu
+.menu {
+  background-color: $dark;
+}
+$menu-item-color: $light;
+$menu-item-hover-color: $light;
+$menu-item-hover-background-color: $primary;
+$menu-label-color: $white;
+// =================================================
+
+// $table-row-hover-background-color: rgba(149, 165, 166, 0.2);
+// .select.is-expanded {
+//   width: 100%;
+//   select {
+//     width: 100%;
+//   }
+// }
+// .scrollable-table-div {
+//   overflow-x: auto;
+// }
+// Import only what you need from Bulma
+@import "../../../node_modules/bulma/bulma.sass";
