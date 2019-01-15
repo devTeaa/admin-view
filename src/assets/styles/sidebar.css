@@ -3,7 +3,7 @@
 }
 
 .menu-list > li {
-  margin: 0.75em 0;
+  margin: 0.5em 0;
 }
 
 .menu-list > li li {
@@ -20,15 +20,17 @@
 }
 
 .menu-list > li ul {
-  transition: 0.2s max-height ease-in-out, 0.3s opacity ease-in-out;
+  transition: 0.2s ease-in-out;
   max-height: 100vh;
   overflow: hidden;
+  margin: 12px;
   opacity: 1;
 }
 
 .menu-list > li.menu-close ul {
   max-height: 0;
   opacity: 0;
+  margin: 0;
 }
 
 .menu-list a {
