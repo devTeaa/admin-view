@@ -1,12 +1,22 @@
 const navList = [
   {
-    url: "/",
+    url: "/db",
     name: "Dashboard",
     iconClass: "material-icons",
-    iconFont: "dashboard"
+    iconFont: "dashboard",
+    child: [
+      {
+        url: "/first",
+        name: "First"
+      },
+      {
+        url: "/second",
+        name: "Second child"
+      }
+    ]
   },
   {
-    url: "/",
+    url: "/person",
     name: "Person",
     iconClass: "material-icons",
     iconFont: "person"

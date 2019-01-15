@@ -1,8 +1,9 @@
+import "./assets/sass/bulma.scss";
+import "material-design-icons/iconfont/material-icons.css";
+
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./assets/sass/bulma.scss";
-import "material-design-icons/iconfont/material-icons.css";
 import * as serviceWorker from "./serviceWorker";
 
 import Container from "./layout/Container";

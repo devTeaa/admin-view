@@ -7,6 +7,9 @@ import Sidebar from "./Sidebar";
 const Container = () => (
   <div className="container-with-sidebar">
     <Sidebar />
+    <section>
+      <h1>Container</h1>
+    </section>
   </div>
 );
 
