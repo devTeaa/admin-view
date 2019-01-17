@@ -4,7 +4,7 @@ const navList = [
     name: "Dashboard",
     iconClass: "material-icons",
     iconFont: "dashboard",
-    child: [
+    childs: [
       {
         url: "/first",
         name: "First"

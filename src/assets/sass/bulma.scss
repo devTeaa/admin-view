@@ -16,6 +16,15 @@ $menu-item-hover-color: $light;
 $menu-item-hover-background-color: $primary;
 $menu-label-color: $white;
 // =================================================
+// Sidebar burger
+.sidebar-burger {
+  color: $light;
+}
+
+.sidebar-burger:hover {
+  color: $primary;
+}
+// =================================================
 
 // $table-row-hover-background-color: rgba(149, 165, 166, 0.2);
 // .select.is-expanded {

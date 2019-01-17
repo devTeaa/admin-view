@@ -11,6 +11,7 @@ body > section {
   display: grid;
   grid-template-columns: minmax(220px, 1fr) 6fr;
   grid-template-rows: 1fr;
+  position: relative;
 }
 
 .container-with-sidebar > section {
