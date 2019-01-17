@@ -9,9 +9,13 @@ body > section {
 .container-with-sidebar {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) 6fr;
+  grid-template-columns: auto 6fr;
   grid-template-rows: 1fr;
   position: relative;
+}
+
+.container-with-sidebar.hide-sidebar {
+  grid-template-columns: 80px 6fr;
 }
 
 .container-with-sidebar > section {

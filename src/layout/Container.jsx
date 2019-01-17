@@ -10,11 +10,12 @@ class Container extends Component {
   constructor() {
     super();
     this.state = {
-      viewMobile: false,
+      isMobile: false,
       menuStateOpen: false
     };
 
     this.resizeFunction = this.resizeFunction.bind(this);
+    this.toggleSideBar = this.toggleSideBar.bind(this);
   }
 
   componentDidMount() {
@@ -23,25 +24,33 @@ class Container extends Component {
   }
 
   resizeFunction() {
+    const { isMobile } = this.state;
     if (window.innerWidth >= 960) {
-      this.setState({ viewMobile: false, menuStateOpen: true });
+      if (isMobile) {
+        this.setState({ isMobile: false, menuStateOpen: true });
+      }
     } else {
-      this.setState({ viewMobile: true, menuStateOpen: false });
+      this.setState({ isMobile: true, menuStateOpen: false });
     }
   }
 
+  toggleSideBar() {
+    const { menuStateOpen } = this.state;
+    this.setState({ menuStateOpen: !menuStateOpen });
+  }
+
   render() {
-    const { viewMobile, menuStateOpen } = this.state;
+    const { menuStateOpen } = this.state;
 
     return (
       <div
         className={
-          viewMobile && menuStateOpen
-            ? "container-with-sidebar hide-sidebar"
-            : "container-with-sidebar"
+          menuStateOpen
+            ? "container-with-sidebar"
+            : "container-with-sidebar hide-sidebar"
         }
       >
-        <Sidebar />
+        <Sidebar toggleSideBar={this.toggleSideBar} />
         <section>
           <HeadSection />
           <MainSection />

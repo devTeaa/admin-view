@@ -56,8 +56,14 @@
   right: 0;
 }
 
-.container-with-sidebar.hide-sidebar {
-  grid-template-columns: 80px 6fr;
+.container-with-sidebar > .menu {
+  min-width: 200px;
+  width: 100%;
+  transition: 0.1s min-width ease-in-out;
+}
+
+.container-with-sidebar.hide-sidebar > .menu {
+  min-width: 78px;
 }
 
 .container-with-sidebar.hide-sidebar > .menu > p,
@@ -89,6 +95,10 @@
   margin-top: auto;
   display: flex;
   cursor: pointer;
+}
+
+.sidebar-burger:focus {
+  outline: none;
 }
 
 .sidebar-burger > span {
