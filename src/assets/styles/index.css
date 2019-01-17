@@ -14,10 +14,6 @@ body > section {
   position: relative;
 }
 
-.container-with-sidebar.hide-sidebar {
-  grid-template-columns: 80px 6fr;
-}
-
 .container-with-sidebar > section {
   padding: 1rem;
 }

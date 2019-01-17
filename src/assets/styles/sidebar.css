@@ -1,5 +1,5 @@
 .menu {
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -47,13 +47,13 @@
   box-shadow: 0 12px 20px -10px rgba(52, 152, 219, 0.28);
 }
 
-.menu-list a i {
-  margin-right: 0.5rem;
+.menu-list a > span:nth-child(2) {
+  margin-left: 0.5rem;
 }
 
 .menu-list a > i:nth-child(3) {
   position: absolute;
-  right: 0;
+  right: 0.5rem;
 }
 
 .container-with-sidebar > .menu {
@@ -63,7 +63,8 @@
 }
 
 .container-with-sidebar.hide-sidebar > .menu {
-  min-width: 78px;
+  --width-size: 60px;
+  min-width: var(--width-size);
 }
 
 .container-with-sidebar.hide-sidebar > .menu > p,
@@ -84,7 +85,7 @@
 .container-with-sidebar.hide-sidebar .menu-list > li > ul {
   position: absolute;
   top: -12px;
-  left: 52px;
+  left: calc(var(--width-size) - 16px);
   background-color: #343434;
   border-left: 0;
   padding: 0;
