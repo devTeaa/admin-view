@@ -36,11 +36,24 @@
   margin: 0;
 }
 
+.menu-list > li > ul > li {
+  margin: 0;
+}
+
+.menu-list > li > ul > li:first-child {
+  margin-top: 4px;
+}
+
+.menu-list > li > ul > li:last-child {
+  margin-bottom: 4px;
+}
+
 .menu-list a {
   display: flex;
   align-items: center;
   transition: 0.1s background-color ease-in-out;
   position: relative;
+  border-radius: 0;
 }
 
 .menu-list a:hover {
@@ -96,6 +109,7 @@
   margin-top: auto;
   display: flex;
   cursor: pointer;
+  margin-bottom: 12px;
 }
 
 .sidebar-burger:focus {
